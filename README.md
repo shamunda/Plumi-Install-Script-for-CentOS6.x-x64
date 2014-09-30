@@ -1,5 +1,18 @@
-Plumi-Install-Script-for-CentOS6.x-x64
+Plumi-Install-Script-for-CentOS6.x-x64 - BETA
 ======================================
+This is still all experimental
+
+NOTE! Before running the CentOS-Install script make sure you have modified your /etc/hosts file to reflect
+the two external names being used for the server.
+
+Example:
+portal.myserver.com
+video.myserver.com
+
+Failure to modify your /etc/hosts file before running the install script will require you to rerun ./bin/buildout again.
+Make it easy on yourself, you've been warned ;)
+
+Let's get started!
 
 Shell scripts to aid with the installation of the Plumi video server on "clean" CentOS v6.x 64bit systems only.
 

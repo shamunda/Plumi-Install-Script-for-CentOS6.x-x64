@@ -76,12 +76,15 @@ perl -i -p -e "s/newvideos.plumi.org/$videoservername/g" $_installpath/site.cfg
 #       echo -e $GREEN"'collective.js.jqueryui 1.8.16.9 - already Installed :)"$RESET
 #fi
 
+# Taken directly from the install instructions
 # Run the buildout
 cd $_installpath
-./bin/python bootstrap.py
-./bin/buildout -v
-# for some reason running this again works the second time
-./bin/buildout -v
+./bin/python bootstrap.py && ./bin/buildout -v
 cd $_installpath/ffmpeg
-# cd $_installpath/ffmpeg
 ../bin/python bootstrap.py && ./bin/buildout -v
+cd $_installpath
+./bin/supervisord
+clear
+echo -e $YELLOW"Displaying Running Status"$RESET
+./bin/supervisorctl status
+sleep 3
