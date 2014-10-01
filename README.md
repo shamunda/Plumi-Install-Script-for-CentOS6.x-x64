@@ -36,8 +36,8 @@ There are no provisions for trapping for errors, etc.
 However on a clean system, these scripts should get you up and running, other things break but
 hopefully with everyones help we can clear it up.
 
-Getting Started
-===============
+Running the scripts
+===================
 
 Copy this files to a desired location
 
