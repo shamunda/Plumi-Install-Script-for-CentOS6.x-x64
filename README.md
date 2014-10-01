@@ -15,11 +15,9 @@ Make it easy on yourself, you've been warned ;)
 
 Let's get started!
 =================
+yum install git -y
 
-Grab this file and unzip: 
-https://github.com/shamunda/Plumi-Install-Script-for-CentOS6.x-x64/blob/master/Plumi-Install-Script-for-CentOS6.x-x64.zip
-
-Or clone: git clone https://github.com/shamunda/Plumi-Install-Script-for-CentOS6.x-x64.git
+Clone: git clone https://github.com/shamunda/Plumi-Install-Script-for-CentOS6.x-x64.git
 
 These script will aid in the installation of the Plumi video server on "clean" CentOS v6.x 64bit systems only.
 
