@@ -6,8 +6,8 @@
 # v0.1
 
 
-# System Prep
-#
+# System Preperation script (CENTOS 6.x 64bit ONLY!)
+
 # Disable firewall
 clear
 RED='\033[01;31m'
