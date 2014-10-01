@@ -1,6 +1,6 @@
 #!/bin/bash
 # Quick and Direct Plumi install script for CentOS 6.x x64 Only!
-# Plumi install script create by Dennis Ross (http://www.ssctech.com)
+# Plumi install script create by Dennis Ross (http://www.playlan.com)
 # Sept 2014
 # Issued under GNU GPL
 # v0.1
@@ -57,7 +57,7 @@ rpm -Uhv http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el6
 yum groupinstall "Development Tools" -y
 
 # Then applications and support libraries
-yum install openssl-devel sqlite-devel bzip2-devel libxslt-devel pcre groff ruby-devel libxml2 libxml2-devel libxslt libxslt-devel git-all zlib zlib-devel zlibrary zlib-devel libjpeg-turbo libjpeg-turbo-devel groff groff-perl bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel python-virtualenv tkinter freetype freetype-devel python-lcms lcms-devel python-webpy python-devel x264-devel libvpx-devel python-imaging wget ftp nano vim xz-libs -y
+yum install ccze openssl-devel sqlite-devel bzip2-devel libxslt-devel pcre groff ruby-devel libxml2 libxml2-devel libxslt libxslt-devel git-all zlib zlib-devel zlibrary zlib-devel libjpeg-turbo libjpeg-turbo-devel groff groff-perl bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel python-virtualenv tkinter freetype freetype-devel python-lcms lcms-devel python-webpy python-devel x264-devel libvpx-devel python-imaging wget ftp nano vim xz-libs -y
 
 # Python27 Prep
 cd $source_dir
