@@ -23,7 +23,9 @@ CentOS_Plumi-Prep.sh
 CentOS_Plumi-Build.sh
 
 I REPEAT: It's highly recommended you run these scripts on a "clean minimal install" 
-of CentOS 6.x. I'm new at the whole bash scripting thing so things are kludged eventually I'll try
+of CentOS 6.x. 
+
+Being new to the whole bash scripting thing so things are kludged. Eventually I'll try
 my hand at Python and see if we can't make this proper.
 There are no provisions for trapping for errors, etc.
 

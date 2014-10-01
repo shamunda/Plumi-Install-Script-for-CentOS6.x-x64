@@ -33,7 +33,6 @@ virtualenv-2.7 .
 source $_installpath/bin/activate
 
 # Download bootstrap source
-# cd $_installpath
 mv bootstrap.py bootstrap.py.old && wget $_bootstrap
 # Modifying buildout.cfg (needed for using bootstrap.py v2)
 # perl -i -p -e "s/buildout.dumppickedversions//g" $_installpath/buildout.cfg
