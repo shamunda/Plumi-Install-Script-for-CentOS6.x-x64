@@ -50,3 +50,8 @@ do
    fi
    (( c++ ))
 done
+
+# To see the log files of the Plumi server run the following
+# tail -f -n50 var/log/* parts/transcodedaemon/* | ccze -A | grep "ERROR"
+
+# If you get an error stating that ccze is not found do a - yum install ccze -y
