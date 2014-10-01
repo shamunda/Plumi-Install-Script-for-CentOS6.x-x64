@@ -1,6 +1,6 @@
 Plumi-Install-Script-for-CentOS6.x-x64 - BETA
 ======================================
-This is still experimental
+This is still experimental - and I still don't know what I'm doing with GIT :P
 
 NOTE! Before running the CentOS-Install script make sure you have modified your /etc/hosts file to reflect
 the two external names being used for the server.
