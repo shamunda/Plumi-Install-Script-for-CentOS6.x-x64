@@ -1,6 +1,6 @@
 #!/bin/bash
 # Quick and Direct Plumi install script for CentOS 6.x x64 Only!
-# Plumi install script create by Dennis Ross (http://www.ssctech.com)
+# Plumi install script create by Dennis Ross (http://www.playlan.com)
 # Sept 2014
 # Issued under GNU GPL
 # v0.1
