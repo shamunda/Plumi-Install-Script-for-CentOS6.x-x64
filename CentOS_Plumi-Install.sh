@@ -13,7 +13,6 @@ GREEN='\e[0;32m'
 YELLOW='\e[1;33m'
 RESET='\033[0m'
 
-
 export who=`whoami`
 SCRIPTDIRECTORY="$(pwd)"
 clear
