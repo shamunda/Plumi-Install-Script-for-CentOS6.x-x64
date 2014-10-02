@@ -3,7 +3,7 @@ Plumi-Install-Script-for-CentOS6.x-x64 - BETA
 Experimental Centos Installxperimental
 
 NOTE! Before running the CentOS-Install script make sure you have modified your /etc/hosts file to reflect
-the two external names being used for the server.
+the two names being used for the server.
 
 Example:
 portal.myserver.com
