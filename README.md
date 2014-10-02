@@ -44,4 +44,8 @@ Copy this files to a desired location
 chmod +x CentOS*
 ./CentOS_Plumi-Install.sh
 
-Follow the prompts.
+If the installation was successful you should see the status of all the processes actively running.
+
+An update walkthrough for a debian install can be found from Plumi.org at https://trinket.io/mgogoulos/classes/plumi-4-5#/installation/installation
+
+Enjoy!
