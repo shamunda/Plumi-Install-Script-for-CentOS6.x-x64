@@ -7,11 +7,26 @@
 # v0.1
 
 # Modify, build, and run Plumi for CenOS 6.x 64bit ONLY!
-clear
 RED='\033[01;31m'
 GREEN='\e[0;32m'
 YELLOW='\e[1;33m'
 RESET='\033[0m'
+answer='n'
+clear
+
+# simple function for users personal settings
+userSettings()
+{
+ echo -n -e $GREEN"Enter administators name (ex: admin): "$RESET
+ read adminname
+ echo -n -e $GREEN"Enter administrator password: "$RESET
+ read adminpass
+ echo -n -e $GREEN"Enter Portal server name (ex: new.plumi.org): "$RESET
+ read portalservername
+ echo -n -e $GREEN"Enter Video Server name (ex: newvideos.plumi.org): "$RESET
+ read videoservername
+}
+
 #_bootstrap='http://downloads.buildout.org/2/bootstrap.py'
 _bootstrap='https://raw.github.com/buildout/buildout/1/bootstrap/bootstrap.py'
 # First find the plumi.app install path
@@ -50,13 +65,29 @@ chmod 777 -R $_installpath/tmp
 # Modify site.cfg
 cp $_installpath/site.cfg $_installpath/site.cfg.original
 perl -i -p -e "s/www-data/root/g" $_installpath/site.cfg
-read -p "Enter administators name (ex: admin): " adminname
+# Call functions for personal settings
+while [ "$answer" != "y" ]
+	do
+		clear
+		userSettings
+		echo ""
+		echo -e $YELLOW"Please review your settings"$RESET
+		echo -e $RED"==========================="$RESET
+		echo -e $YELLOW"Username:          "$GREEN $adminname
+		echo -e $YELLOW"Password:          "$GREEN $adminpass
+		echo -e $YELLOW"Portal Name:       "$GREEN $portalservername
+		echo -e $YELLOW"Video Server Name: "$GREEN $videoservername
+		echo -e $RESET""
+		echo -n -e $YELLOW"Does this look correct (y/n)? "$RESET
+		read answer
+		echo ""
+done
+
+# Write out edits
+echo -e $RED"Modifying site.cfg"$RESET
 perl -i -p -e "s/admin:/$adminname:/g" $_installpath/site.cfg
-read -p "Enter administrator password: " adminpass
 perl -i -p -e "s/:admin/:$adminpass/g" $_installpath/site.cfg
-read -p "Enter Portal server name (ex: new.plumi.org): " portalservername
 perl -i -p -e "s/new.plumi.org/$portalservername/g" $_installpath/site.cfg
-read -p "Enter Video Server name (ex: newvideos.plumi.org): " videoservername
 perl -i -p -e "s/newvideos.plumi.org/$videoservername/g" $_installpath/site.cfg
 
 ## Pinnning Specific python version for apps and libraries (experimental)
